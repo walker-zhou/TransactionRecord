@@ -1,0 +1,12 @@
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\bin\Debug\net6.0\ClassTransaction.deps.json
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\bin\Debug\net6.0\ClassTransaction.dll
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\bin\Debug\net6.0\ClassTransaction.pdb
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.csproj.AssemblyReference.cache
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.GeneratedMSBuildEditorConfig.editorconfig
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.AssemblyInfoInputs.cache
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.AssemblyInfo.cs
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.csproj.CoreCompileInputs.cache
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.dll
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\refint\ClassTransaction.dll
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.pdb
+D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ref\ClassTransaction.dll

@@ -8,17 +8,21 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\zhuji\\.nuget\\packages\\": {}
+    "C:\\Users\\zhuji\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\ClassTransaction\\ClassTransaction.csproj",
+      "projectUniqueName": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\ClassTransaction\\ClassTransaction.csproj",
       "projectName": "ClassTransaction",
-      "projectPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\ClassTransaction\\ClassTransaction.csproj",
+      "projectPath": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\ClassTransaction\\ClassTransaction.csproj",
       "packagesPath": "C:\\Users\\zhuji\\.nuget\\packages\\",
-      "outputPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\ClassTransaction\\obj\\",
+      "outputPath": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\ClassTransaction\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\zhuji\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -60,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
