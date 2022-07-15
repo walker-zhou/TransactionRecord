@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z10/xVNxZ/VsgQIK0TyvNm5P/Qcz8o9NfaE0ATSPyjKx83cokfWaZyl7IVtN0WrEXGKGlmVObbKIC/aNSfnokg==",
+  "success": true,
+  "projectFilePath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zhuji\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\zhuji\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\zhuji\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\zhuji\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\zhuji\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\zhuji\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
