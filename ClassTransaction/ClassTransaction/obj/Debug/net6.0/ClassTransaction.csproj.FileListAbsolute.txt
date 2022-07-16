@@ -10,3 +10,17 @@ D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\Cla
 D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\refint\ClassTransaction.dll
 D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.pdb
 D:\HRKJ\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ref\ClassTransaction.dll
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\bin\Debug\net6.0\ClassTransaction.deps.json
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\bin\Debug\net6.0\ClassTransaction.dll
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\bin\Debug\net6.0\ClassTransaction.pdb
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.csproj.AssemblyReference.cache
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.GeneratedMSBuildEditorConfig.editorconfig
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.AssemblyInfoInputs.cache
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.AssemblyInfo.cs
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.csproj.CoreCompileInputs.cache
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.dll
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\refint\ClassTransaction.dll
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.pdb
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ref\ClassTransaction.dll
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\bin\Debug\net6.0\ClassTransaction.runtimeconfig.json
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\ClassTransaction\obj\Debug\net6.0\ClassTransaction.genruntimeconfig.cache

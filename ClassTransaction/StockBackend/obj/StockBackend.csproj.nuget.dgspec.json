@@ -4,14 +4,14 @@
     "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj": {}
   },
   "projects": {
-    "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\ClassTransaction\\ClassTransaction.csproj": {
+    "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\ClassTransaction\\ClassTransaction.csproj",
-        "projectName": "ClassTransaction",
-        "projectPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\ClassTransaction\\ClassTransaction.csproj",
+        "projectUniqueName": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj",
+        "projectName": "StockBackend",
+        "projectPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj",
         "packagesPath": "C:\\Users\\zhuji\\.nuget\\packages\\",
-        "outputPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\ClassTransaction\\obj\\",
+        "outputPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zhuji\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,68 +39,30 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj",
-        "projectName": "StockBackend",
-        "projectPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj",
-        "packagesPath": "C:\\Users\\zhuji\\.nuget\\packages\\",
-        "outputPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\zhuji\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\ClassTransaction\\ClassTransaction.csproj": {
-                "projectPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\ClassTransaction\\ClassTransaction.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.0, )"
             }
           },
           "imports": [

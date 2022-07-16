@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ClassTransaction",
+    "\\ClassTransaction\\ClassTransaction"
   ],
-  "SelectedNode": "\\D:\\HRKJ\\TransactionRecord",
+  "SelectedNode": "\\ClassTransaction\\ClassTransaction\\Stock.cs",
   "PreviewInSolutionExplorer": false
 }
