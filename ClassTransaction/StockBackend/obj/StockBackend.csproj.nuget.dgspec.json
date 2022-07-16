@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj": {}
+    "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj": {}
   },
   "projects": {
-    "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj": {
+    "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj",
+        "projectUniqueName": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj",
         "projectName": "StockBackend",
-        "projectPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj",
+        "projectPath": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\StockBackend\\StockBackend.csproj",
         "packagesPath": "C:\\Users\\zhuji\\.nuget\\packages\\",
-        "outputPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\StockBackend\\obj\\",
+        "outputPath": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\StockBackend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\zhuji\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -83,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

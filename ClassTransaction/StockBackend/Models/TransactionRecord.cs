@@ -18,6 +18,6 @@ namespace StockBackend
         public DateTime DealTime { get; set; }
         public string? Description { get; set; }
         public int StockID { get; set; }
-        public Stock Stock { get; set; }
+       // public Stock? Stock { get; set; }
     }
 }
