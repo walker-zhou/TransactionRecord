@@ -1,6 +1,8 @@
 ﻿@page "/stock"
 
-<h3>Stocks @tt</h3>
+<h3>Stocks @if(stocks != null)
+    {@stocks.Count
+    }</h3>
 
 @if (stocks != null)
 {
@@ -20,16 +22,25 @@
                     <td>@stock.CodeNum</td>
                     <td>@stock.Name</td>
                     <td>@stock.Description</td>
-                    <td></td>
+                    <td><button class="btn btn-primary" @onclick="() =>deleteStock(stock)">删除</button> </td>
                 </tr>
             }
         </tbody>
+        <tfoot>
+               <tr>
+                    <td><input type="text" @bind = "newStock.CodeNum" /></td>
+                    <td><input type="text" @bind = "newStock.Name" /></td>
+                    <td><input type="text" @bind = "newStock.Description" /></td>
+                    <td><button class="btn btn-primary" @onclick="addStock">添加</button>
+                    </td>
+                </tr>
+        </tfoot>
     </table>
     }
 @code {
     private ICollection<FrontWeb.Stock>? stocks;
     private int tt=0;
-
+    private FrontWeb.Stock newStock = new FrontWeb.Stock();
     protected override async Task OnInitializedAsync()
     {
         var httpclient = new HttpClient();
@@ -40,6 +51,39 @@
             tt = stocks.Count;
         }
     }
+    private void addStock()
+    {
+        if(string.IsNullOrEmpty(newStock.CodeNum))
+        {
+            return;
+        }
+        if (newStock.CodeNum.Trim().Length >= 5)
+        {
+            var httpclient = new HttpClient();
+            var swaggerC = new swaggerClient("https://localhost:7270", httpclient);
+
+            swaggerC.StocksAsync(newStock);
+            if (stocks != null)
+            {
+                stocks.Add(newStock);
+            }
+        }
+
+    }
+    private void  deleteStock(FrontWeb.Stock tmpStock)
+    {
+        if(tmpStock !=null)
+        {
+            var httpclient = new HttpClient();
+            var swaggerC = new swaggerClient("https://localhost:7270", httpclient);
+
+            swaggerC.Stocks4Async(tmpStock.StockId);
+
+            stocks.Remove(tmpStock);
+
+        }
+    }
+
     }    
 
 
