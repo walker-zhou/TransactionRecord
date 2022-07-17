@@ -1,0 +1,45 @@
+﻿@page "/stock"
+
+<h3>Stocks @tt</h3>
+
+@if (stocks != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var stock in stocks)
+            {
+                <tr>
+                    <td>@stock.CodeNum</td>
+                    <td>@stock.Name</td>
+                    <td>@stock.Description</td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    }
+@code {
+    private ICollection<FrontWeb.Stock>? stocks;
+    private int tt=0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var httpclient = new HttpClient();
+        var swaggerC = new swaggerClient("https://localhost:7270",httpclient);
+        stocks = await swaggerC.StocksAllAsync();
+        if(stocks !=null)
+        {
+            tt = stocks.Count;
+        }
+    }
+    }    
+
+

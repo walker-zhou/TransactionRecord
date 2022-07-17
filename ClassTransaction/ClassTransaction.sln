@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockBackend", "StockBackend\StockBackend.csproj", "{31E28D2B-FA9E-455E-B65A-0E8CBAE9A7F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontWeb", "FrontWeb\FrontWeb.csproj", "{B1AC8607-7723-417B-B1A3-98B7F70B16AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontWeb", "FrontWeb\FrontWeb.csproj", "{B1AC8607-7723-417B-B1A3-98B7F70B16AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
