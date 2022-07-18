@@ -1,7 +1,7 @@
 ﻿@page "/transactionrecordcom"
 <h3>交易记录</h3>
 股票 @stockCount
-<select onchange="filterRecords(value)">
+<select @onchange="filterRecords">
     @if (stocks != null)
     {
         @foreach (var curStock in stocks)
@@ -10,12 +10,13 @@
         }
 
     }
-</select>
+</select>当前ID @tmpID
 
 @code {
     private ICollection<FrontWeb.Stock>? stocks;
     private ICollection<FrontWeb.TransactionRecord>? transactionRecords;
     private int stockCount = 0;
+    private int tmpID = 0;
     private FrontWeb.Stock newStock = new FrontWeb.Stock();
     protected override async Task OnInitializedAsync()
     {
@@ -30,13 +31,17 @@
         }
     }
 
-    private void  filterRecords(int stockID)
+    private void  filterRecords(ChangeEventArgs e)
     {
-        if(stockID!=null)
+        if(e!=null)
         {
-            
+            if (e.Value != null)
+            {
+                tmpID = Convert.ToInt32(e.Value.ToString());
+                
+            }
         }
     }
-    }
+    
 
 }
