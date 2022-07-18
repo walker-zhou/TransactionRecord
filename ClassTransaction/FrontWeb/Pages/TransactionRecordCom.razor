@@ -1,0 +1,42 @@
+﻿@page "/transactionrecordcom"
+<h3>交易记录</h3>
+股票 @stockCount
+<select onchange="filterRecords(value)">
+    @if (stocks != null)
+    {
+        @foreach (var curStock in stocks)
+        {
+            <option value="@curStock.StockId">@curStock.CodeNum+@curStock.Name</option>
+        }
+
+    }
+</select>
+
+@code {
+    private ICollection<FrontWeb.Stock>? stocks;
+    private ICollection<FrontWeb.TransactionRecord>? transactionRecords;
+    private int stockCount = 0;
+    private FrontWeb.Stock newStock = new FrontWeb.Stock();
+    protected override async Task OnInitializedAsync()
+    {
+        var httpclient = new HttpClient();
+        var swaggerC = new swaggerClient("https://localhost:7270",httpclient);
+        stocks = await swaggerC.StocksAllAsync();
+        transactionRecords = await swaggerC.TransactionRecordsAllAsync();
+
+        if(stocks !=null)
+        {
+            stockCount = stocks.Count;
+        }
+    }
+
+    private void  filterRecords(int stockID)
+    {
+        if(stockID!=null)
+        {
+            
+        }
+    }
+    }
+
+}
