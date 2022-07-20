@@ -50,6 +50,26 @@ namespace StockBackend.Controllers
             return transactionRecord;
         }
 
+        //根据stockID查交易记录
+        // GET: api/TransactionRecords/stock/5
+        [HttpGet("stock/{id}")]
+        public async Task<ActionResult<IEnumerable<TransactionRecord>>> GetTransactionRecordByStock(int id)
+        {
+            if (_context.TransactionRecords == null)
+            {
+                return NotFound();
+            }
+            
+            var transactionRecord = await _context.TransactionRecords.Where(p => p.StockID == id).ToListAsync();
+
+            if (transactionRecord == null)
+            {
+                return NotFound();
+            }
+
+            return transactionRecord;
+        }
+
         // PUT: api/TransactionRecords/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
