@@ -1,6 +1,6 @@
 ﻿@page "/transactionrecordcom"
 <h3>交易记录</h3>
-股票 @stockCount
+股票 
 <select @onchange="filterRecords">
     @if (stocks != null)
     {
@@ -12,22 +12,58 @@
     }
 </select>当前ID @tmpID
 
+@if (curRecords != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>名称</th>
+                <th>价格</th>
+                <th>时间</th>
+                <th>买入</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transactionRecord in curRecords)
+            {
+                <tr>
+                    <td>@transactionRecord.StockID</td>
+                    <td>@transactionRecord.DealPrice</td>
+                    <td>@transactionRecord.DealTime</td>
+                    <td>@transactionRecord.TradeType</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+               <tr>
+                    <td><input type="text" @bind = "newTransactionRecord.StockID" /></td>
+                    <td><input type="text" @bind = "newTransactionRecord.DealPrice" /></td>
+                    <td><input type="text" @bind = "newTransactionRecord.DealTime" /></td>
+                    <td><button class="btn btn-primary" @onclick="addTransactionRecord">添加</button>
+                    </td>
+                </tr>
+        </tfoot>
+    </table>
+    }
+
+
 @code {
     private ICollection<FrontWeb.Stock>? stocks;
     private ICollection<FrontWeb.TransactionRecord>? transactionRecords;
-    private int stockCount = 0;
+    private List<FrontWeb.TransactionRecord>? curRecords;
+
     private int tmpID = 0;
-    private FrontWeb.Stock newStock = new FrontWeb.Stock();
+    private FrontWeb.TransactionRecord newTransactionRecord = new TransactionRecord();
     protected override async Task OnInitializedAsync()
     {
         var httpclient = new HttpClient();
-        var swaggerC = new swaggerClient("https://localhost:7270",httpclient);
+        var swaggerC = new swagger1Client("https://localhost:7270",httpclient);
         stocks = await swaggerC.StocksAllAsync();
         transactionRecords = await swaggerC.TransactionRecordsAllAsync();
 
-        if(stocks !=null)
+        if(newTransactionRecord !=null)
         {
-            stockCount = stocks.Count;
+            newTransactionRecord.DealTime = DateTime.Now;
         }
     }
 
@@ -38,9 +74,31 @@
             if (e.Value != null)
             {
                 tmpID = Convert.ToInt32(e.Value.ToString());
-                
+
+                curRecords = transactionRecords.Where(t => t.StockID == tmpID).ToList();
+
+                newTransactionRecord.StockID = tmpID;
             }
         }
+    }
+    private void addTransactionRecord()
+    {
+        if(newTransactionRecord ==null)
+        {
+            return;
+        }
+        if (newTransactionRecord.DealPrice>0)
+        {
+            var httpclient = new HttpClient();
+            var swaggerC = new swagger1Client("https://localhost:7270", httpclient);
+
+            swaggerC.TransactionRecordsAsync(newTransactionRecord);
+            if (newTransactionRecord != null)
+            {
+                curRecords.Add(newTransactionRecord);
+            }
+        }
+
     }
     
 

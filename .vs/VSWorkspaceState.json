@@ -1,11 +1,4 @@
 {
-  "ExpandedNodes": [
-    "",
-    "\\ClassTransaction",
-    "\\ClassTransaction\\ClassTransaction",
-    "\\ClassTransaction\\FrontWeb",
-    "\\ClassTransaction\\FrontWeb\\Pages"
-  ],
-  "SelectedNode": "\\ClassTransaction\\FrontWeb\\Pages\\Stock.razor",
+  "ExpandedNodes": [],
   "PreviewInSolutionExplorer": false
 }

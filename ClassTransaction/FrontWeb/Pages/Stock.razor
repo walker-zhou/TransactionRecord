@@ -44,7 +44,7 @@
     protected override async Task OnInitializedAsync()
     {
         var httpclient = new HttpClient();
-        var swaggerC = new swaggerClient("https://localhost:7270",httpclient);
+        var swaggerC = new swagger1Client("https://localhost:7270",httpclient);
         stocks = await swaggerC.StocksAllAsync();
         if(stocks !=null)
         {
@@ -60,7 +60,7 @@
         if (newStock.CodeNum.Trim().Length >= 5)
         {
             var httpclient = new HttpClient();
-            var swaggerC = new swaggerClient("https://localhost:7270", httpclient);
+            var swaggerC = new swagger1Client("https://localhost:7270", httpclient);
 
             swaggerC.StocksAsync(newStock);
             if (stocks != null)
@@ -75,7 +75,7 @@
         if(tmpStock !=null)
         {
             var httpclient = new HttpClient();
-            var swaggerC = new swaggerClient("https://localhost:7270", httpclient);
+            var swaggerC = new swagger1Client("https://localhost:7270", httpclient);
 
             swaggerC.Stocks4Async(tmpStock.StockId);
 

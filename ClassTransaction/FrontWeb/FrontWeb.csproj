@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <OpenApiReference Include="OpenAPIs\swagger.json" CodeGenerator="NSwagCSharp">
+    <None Include="OpenAPIs\swagger.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <OpenApiReference Include="OpenAPIs\swagger1.json" CodeGenerator="NSwagCSharp">
       <SourceUri>https://localhost:7270/swagger/v1/swagger.json</SourceUri>
     </OpenApiReference>
   </ItemGroup>

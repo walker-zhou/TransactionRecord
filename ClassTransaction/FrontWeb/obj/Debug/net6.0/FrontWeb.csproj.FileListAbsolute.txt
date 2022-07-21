@@ -58,3 +58,4 @@ D:\HRKJ\TransactionRecord\ClassTransaction\FrontWeb\obj\Debug\net6.0\refint\Fron
 D:\HRKJ\TransactionRecord\ClassTransaction\FrontWeb\obj\Debug\net6.0\FrontWeb.pdb
 D:\HRKJ\TransactionRecord\ClassTransaction\FrontWeb\obj\Debug\net6.0\FrontWeb.genruntimeconfig.cache
 D:\HRKJ\TransactionRecord\ClassTransaction\FrontWeb\obj\Debug\net6.0\ref\FrontWeb.dll
+D:\HRKJ\TransactionRecord\ClassTransaction\FrontWeb\bin\Debug\net6.0\OpenAPIs\swagger1.json

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3PKANYwEzG+h6bMCv4q6mSV6nii4rT1/d1PnuX+mkbMAyN7vaSSTrCdkojGXFTL/fD6hq4HXhZiADlWroXwYdw==",
+  "dgSpecHash": "+H8KxLpCkh58YFCcEXPhm8RfaaupTqKKeYj3r9rAq+BLEZSzeoG515kCvo4Yf4akZ5nQzf5EmzV+oIeyAzwHag==",
   "success": true,
-  "projectFilePath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj",
+  "projectFilePath": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zhuji\\.nuget\\packages\\microsoft.extensions.apidescription.client\\3.0.0\\microsoft.extensions.apidescription.client.3.0.0.nupkg.sha512",
     "C:\\Users\\zhuji\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
