@@ -21,16 +21,22 @@
                 <th>价格</th>
                 <th>时间</th>
                 <th>买入</th>
+                <th>极值</th>
+                <th>描述</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             @foreach (var transactionRecord in curRecords)
             {
                 <tr>
-                    <td>@transactionRecord.StockID</td>
+                    <td>@stockName</td>
                     <td>@transactionRecord.DealPrice</td>
-                    <td>@transactionRecord.DealTime</td>
+                    <td>@transactionRecord.DealTime.Day</td>
                     <td>@transactionRecord.TradeType</td>
+                    <td>@transactionRecord.TreeDayMax</td>
+                    <td>@transactionRecord.Description</td>
+                    <td></td>
                 </tr>
             }
         </tbody>
@@ -38,7 +44,10 @@
                <tr>
                     <td><input type="text" @bind = "newTransactionRecord.StockID" /></td>
                     <td><input type="text" @bind = "newTransactionRecord.DealPrice" /></td>
-                    <td><input type="text" @bind = "newTransactionRecord.DealTime" /></td>
+                    <td><input type="text" @bind = "newTransactionRecord.DealTime" readonly="readonly" /></td>
+                    <td><input type="checkbox" @bind = "newTransactionRecord.TradeType" /></td>
+                    <td><input type="text" @bind = "newTransactionRecord.TreeDayMax" /></td>
+                    <td><input type="text" @bind = "newTransactionRecord.Description" /></td>
                     <td><button class="btn btn-primary" @onclick="addTransactionRecord">添加</button>
                     </td>
                 </tr>
@@ -53,6 +62,7 @@
     private List<FrontWeb.TransactionRecord>? curRecords;
 
     private int tmpID = 0;
+    private string? stockName;
     private FrontWeb.TransactionRecord newTransactionRecord = new TransactionRecord();
     protected override async Task OnInitializedAsync()
     {
@@ -74,10 +84,20 @@
             if (e.Value != null)
             {
                 tmpID = Convert.ToInt32(e.Value.ToString());
+                foreach( var curStock in stocks)
+                {
+                    if(curStock.StockId == tmpID)
+                    {
+                        stockName = curStock.Name + "-" + curStock.CodeNum;
+                    }
+                }
 
-                curRecords = transactionRecords.Where(t => t.StockID == tmpID).ToList();
+
+                List<FrontWeb.TransactionRecord> tmpT = transactionRecords.Where(t => t.StockID == tmpID).ToList();
+                curRecords = tmpT.OrderByDescending(s => s.DealTime).ToList();
 
                 newTransactionRecord.StockID = tmpID;
+
             }
         }
     }
@@ -93,9 +113,11 @@
             var swaggerC = new swaggerClient("https://localhost:7270", httpclient);
 
             swaggerC.TransactionRecordsAsync(newTransactionRecord);
+
             if (newTransactionRecord != null)
             {
                 curRecords.Add(newTransactionRecord);
+                transactionRecords.Add(newTransactionRecord);
             }
         }
 
