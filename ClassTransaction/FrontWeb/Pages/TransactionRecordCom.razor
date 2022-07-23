@@ -32,8 +32,15 @@
                 <tr>
                     <td>@stockName</td>
                     <td>@transactionRecord.DealPrice</td>
-                    <td>@transactionRecord.DealTime.Day</td>
-                    <td>@transactionRecord.TradeType</td>
+                    <td>@transactionRecord.DealTime.Date.ToShortDateString()</td>
+                    <td>@if(transactionRecord.TradeType)
+                        {
+                            <p>是</p>
+                        }
+                        else
+                        {
+                            <p>否</p>
+                        }</td>
                     <td>@transactionRecord.TreeDayMax</td>
                     <td>@transactionRecord.Description</td>
                     <td></td>
@@ -42,9 +49,9 @@
         </tbody>
         <tfoot>
                <tr>
-                    <td><input type="text" @bind = "newTransactionRecord.StockID" /></td>
+                    <td></td>
                     <td><input type="text" @bind = "newTransactionRecord.DealPrice" /></td>
-                    <td><input type="text" @bind = "newTransactionRecord.DealTime" readonly="readonly" /></td>
+                    <td></td>
                     <td><input type="checkbox" @bind = "newTransactionRecord.TradeType" /></td>
                     <td><input type="text" @bind = "newTransactionRecord.TreeDayMax" /></td>
                     <td><input type="text" @bind = "newTransactionRecord.Description" /></td>
@@ -75,6 +82,18 @@
         {
             newTransactionRecord.DealTime = DateTime.Now;
         }
+
+        if(transactionRecords !=null)
+        {
+            if(transactionRecords.Count>0)
+            {
+                var curT = transactionRecords.ElementAt(0);
+                var E = new ChangeEventArgs();
+                E.Value = curT.StockID;
+                filterRecords(E);
+            }
+        }
+        
     }
 
     private void  filterRecords(ChangeEventArgs e)
@@ -118,6 +137,11 @@
             {
                 curRecords.Add(newTransactionRecord);
                 transactionRecords.Add(newTransactionRecord);
+
+                //reset 
+                newTransactionRecord = new TransactionRecord();
+                newTransactionRecord.StockID = tmpID;
+                newTransactionRecord.DealTime = DateTime.Now;
             }
         }
 
