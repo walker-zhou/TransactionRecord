@@ -1,0 +1,15 @@
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\obj\Debug\FrontWinForm.csproj.AssemblyReference.cache
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\obj\Debug\FrontWinForm.csproj.SuggestedBindingRedirects.cache
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\obj\Debug\FrontWinForm.Form1.resources
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\obj\Debug\FrontWinForm.Properties.Resources.resources
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\obj\Debug\FrontWinForm.csproj.GenerateResource.cache
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\obj\Debug\FrontWinForm.csproj.CoreCompileInputs.cache
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\bin\Debug\FrontWinForm.exe.config
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\bin\Debug\FrontWinForm.exe
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\bin\Debug\FrontWinForm.pdb
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\bin\Debug\Newtonsoft.Json.dll
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\bin\Debug\System.ComponentModel.Annotations.dll
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\bin\Debug\Newtonsoft.Json.xml
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\obj\Debug\FrontWinForm.csproj.CopyComplete
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\obj\Debug\FrontWinForm.exe
+E:\workspace\ASPCore\TransactionRecord\ClassTransaction\FrontWinForm\obj\Debug\FrontWinForm.pdb

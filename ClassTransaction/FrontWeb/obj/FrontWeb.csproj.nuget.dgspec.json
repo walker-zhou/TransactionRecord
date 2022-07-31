@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj": {}
+    "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj": {}
   },
   "projects": {
-    "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj": {
+    "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj",
+        "projectUniqueName": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj",
         "projectName": "FrontWeb",
-        "projectPath": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj",
+        "projectPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\FrontWeb\\FrontWeb.csproj",
         "packagesPath": "C:\\Users\\zhuji\\.nuget\\packages\\",
-        "outputPath": "D:\\HRKJ\\TransactionRecord\\ClassTransaction\\FrontWeb\\obj\\",
+        "outputPath": "E:\\workspace\\ASPCore\\TransactionRecord\\ClassTransaction\\FrontWeb\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\zhuji\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -78,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
